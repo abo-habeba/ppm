@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 900;
+            color: #2e38a1;
+
+            }
+            input,label{
+                margin: 5px;
+                padding: 5px;
+                font-size: 25px;
+                font-weight: 900;
+                border-radius: 15px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="contener">
+        <form>
+            <label for="ton">طن شرايح</label>
+                <input id="ton" type="number" onkeyup="total();">
+
+            <label for="time">عدد الساعات</label>
+                <input id="time" type="number" onkeyup="total();">
+
+            <label for="ppm"> ppm نسبة الخام</label>
+                <input type="number" id="ppm" onkeyup="total();">
+
+            <label for="name">الناتج</label>
+                <input type="number" id="outNum">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
