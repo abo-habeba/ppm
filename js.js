@@ -9,4 +9,4 @@ function  total(){
 
 let  jfoot = document.getElementById("myFoot");
 
-jfoot.innerText = 'By Hesham Mohamed @ 2022';
+jfoot.innerText = 'By Hesham Mohamed © 2022';
