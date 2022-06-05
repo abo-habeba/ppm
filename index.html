@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حساب الخام</title>
-    <style>
-        *{
-          	background-color: #f6f6f6;
-         }
-        form{
-            margin: 5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 25px;
-            font-weight: 900;
-            color: #2e38a1;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساب الخام</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      background-color: #f6f6f6;
+    }
+    form {
+      margin: 10% 5%;
+      padding: 20% 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 25px;
+      font-weight: 900;
+      color: #2e38a1;
+      border: solid #2d3b3f 2px;
+      border-radius: 30px 5px;
 
-            }
-            input,label{
-                margin: 5px;
-                padding: 5px;
-                font-size: 25px;
-                font-weight: 900;
-                border-radius: 15px;
-                text-align: center;
-            }
-    </style>
+    }
+    input,label {
+      max-width: 90%;
+      margin: 3px;
+      padding: 3px;
+      font-size: 25px;
+      font-weight: 900;
+      border-radius: 15px;
+      text-align: center;
+    }
+    footer {
+      color: #ffffff;
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      text-align: center;
+      font-weight: bold;
+      background-color: #053642;
+    }
+    footer span {
+      text-align: center;
+      background-color: #053642;
+    }
+  </style>
 </head>
 <body>
-    <div class="contener">
-        <form>
-            <label for="ton"> طن الشرايح / ساعه</label>
-                <input id="ton" type="number" onkeyup="total();">
+  <div class="contener">
+    <form>
+      <label for="ton"> طن الشرايح / ساعه</label>
+      <input id="ton" type="number" onkeyup="total();">
 
-            <label for="time">عدد الساعات</label>
-                <input id="time" type="number" onkeyup="total();">
+      <label for="time">عدد الساعات</label>
+      <input id="time" type="number" onkeyup="total();">
 
-            <label for="ppm"> ppm </label>
-                <input type="number" id="ppm" onkeyup="total();">
+      <label for="ppm"> ppm </label>
+      <input type="number" id="ppm" onkeyup="total();">
 
-            <label for="name"> الناتج </label>
-                <input type="number" id="outNum">
-        </form>
-    </div>
-    <script src="js.js"></script>
+      <label for="name"> الناتج </label>
+      <input type="number" id="outNum">
+    </form>
+    <footer>
+      <p id="myFoot"></p>
+    </footer>
+  </div>
+  <script src="js.js"></script>
 </body>
 </html>
