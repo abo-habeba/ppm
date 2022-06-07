@@ -1,12 +1,24 @@
+let jton = document.getElementById('ton');
 let jtime    = document.getElementById("time");
 let jppm     = document.getElementById("ppm");
 let joutNum  = document.getElementById("outNum");
 
+
+// function is storag
+jppm.onblur = function(){
+  window.localStorage.setItem('ppm',jppm.value);
+  };
+let storagppm = jppm.value = window.localStorage.getItem('ppm');
+
+
+// function is total sum
 function  total(){
-    joutNum.value = jton.value * jtime.value * jppm.value / 1000;
+    joutNum.value = jton.value * jtime.value * storagppm / 1000;
 };
 
 
+
+// hts is  my footer
 let myFooter =document.createElement('footer');
 document.body.appendChild(myFooter);
 myFooter.innerText = 'By Hesham Mohamed © 2022';
