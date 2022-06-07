@@ -10,15 +10,18 @@
 <body>
   <div class="contener">
     <form>
+      
       <label for="ton"> طن الشرايح / ساعه</label>
       <input id="ton" type="number" onkeyup="total();"  placeholder =" اكتب طن الشرائح في الساعة">
-
+       
       <label for="time">عدد الساعات</label>
       <input id="time" type="number" onkeyup="total();" placeholder ="عدد ساعات التحضيرة">
-
-      <label for="ppm"> ppm </label>
-      <input type="number" id="ppm" onkeyup="total();" >
-
+      
+      <div id="divppm">
+          <label for="ppm"> ppm </label>
+          <input type="number" id="ppm">
+      </div>
+      
       <label for="name"> الناتج </label>
       <input type="number" id="outNum">
     </form>
