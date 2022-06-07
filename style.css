@@ -32,18 +32,13 @@
     ::placeholder{
       font-size: 16px;
     }
-
-    footer {
-      color: #ffffff;
-      width: 100%;
-      position: fixed;
-      bottom: 0px;
-      display: flex;
-      justify-items: center;
-      justify-content: center;
-      align-items: center;
-      min-height: 50px;
-      text-align: center;
-      font-weight: bold;
-      background-color: #053642;
+    #divppm{
+      top: 73px;
+      width: fit-content;
+      position: absolute;
+      z-index: 5;
     }
+    #divppm label,#ppm{
+      width: 100px;
+    }
+
