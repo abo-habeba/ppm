@@ -19,9 +19,7 @@ onload = function(){
   
 // function is total sum
 function  total(){
-    let storagppm = jppm.value;
-  
-    joutNum.value = jton.value * jtime.value * storagppm / 1000;
+    joutNum.value = jton.value * jtime.value * jppm.value; / 1000;
 };
 
 
