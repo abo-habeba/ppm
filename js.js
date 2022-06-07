@@ -7,22 +7,34 @@ let joutNum  = document.getElementById("outNum");
 // function is storag
 jppm.onblur = function(){
   window.localStorage.setItem('ppm',jppm.value);
-  
   };
 
-
+// function is storag
+jton.onblur = function(){
+  window.localStorage.setItem('ton',jton.value);
+  };
 
 onload = function(){
   jppm.value = window.localStorage.getItem('ppm');
+  
+    jton.value = window.localStorage.getItem('ton');
+  
 };
 
   
 // function is total sum
 function  total(){
+  if (jppm.value.length === 2) {
+    jton.focus();
+  };
+  if (jton.value.length === 3) {
+    jtime.focus();
+  };
     let storagppm = jppm.value;
   
     joutNum.value = jton.value * jtime.value * storagppm / 1000;
 };
+
 
 
 
