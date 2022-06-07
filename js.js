@@ -7,12 +7,20 @@ let joutNum  = document.getElementById("outNum");
 // function is storag
 jppm.onblur = function(){
   window.localStorage.setItem('ppm',jppm.value);
+  
   };
-let storagppm = jppm.value = window.localStorage.getItem('ppm');
 
 
+
+onload = function(){
+  jppm.value = window.localStorage.getItem('ppm');
+};
+
+  
 // function is total sum
 function  total(){
+    let storagppm = window.localStorage.getItem('ppm');
+  
     joutNum.value = jton.value * jtime.value * storagppm / 1000;
 };
 
