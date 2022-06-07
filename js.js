@@ -19,7 +19,7 @@ onload = function(){
   
 // function is total sum
 function  total(){
-    let storagppm = window.localStorage.getItem('ppm');
+    let storagppm = jppm.value;
   
     joutNum.value = jton.value * jtime.value * storagppm / 1000;
 };
