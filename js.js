@@ -24,12 +24,7 @@ onload = function(){
   
 // function is total sum
 function  total(){
-  if (jppm.value.length === 2) {
-    jton.focus();
-  };
-  if (jton.value.length === 3) {
-    jtime.focus();
-  };
+ 
     let storagppm = jppm.value;
   
     joutNum.value = jton.value * jtime.value * storagppm / 1000;
